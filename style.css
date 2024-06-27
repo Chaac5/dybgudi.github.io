@@ -1,6 +1,355 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: grey;
 }
+
+
+/*Cabecera*/
+.container-header {
+    width: auto;
+    height: 75px;
+    filter: blur(50%);
+    position:static;
+    box-sizing: border-box;
+}
+
+    .container-header2 {
+        width: auto;
+        height: 45px;
+        position: relative;
+        margin-left: 20px;
+        margin-right: 20px;
+        top: 15px;
+        border-bottom: solid 2px grey;
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .angle-left-icon {
+        width: 25px;
+        margin-left: 10px;
+        cursor: pointer;
+        }
+
+        .logo-gudi-icon {
+            width: 35px;
+            cursor: pointer;
+        }
+
+        .bell-icon {
+            width: 18px;
+            margin-right: 10px;
+            margin-top: 8px;
+            cursor: pointer;
+        }
+
+
+
+
+
+/*Contenido en del cuerpo de botanas*/
+.container-body-botanas {
+    width: auto;
+    height: auto;
+    background-color: rgba(163, 163, 163, 0.041);
+    margin: 0 20px 30px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.box {
+    width: auto;
+}
+
+    /*titula de la seccion de 'Botanas'*/
+    .container-title-botanas {
+        width: auto;
+        height: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        font-size: 10px;
+        font-family: "Fira Sans", sans-serif;
+    }
+        .title-product {
+            width: 250px;
+            height: 30px;
+            border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+        }
+        .title-price {
+            width: 100px;
+            height: 30px;
+            border-left: solid 2px rgba(128, 128, 128, 0.209);
+            border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+        }
+
+
+    /*contenedor de la informacin sobre el porducto*/ /*JS*/
+    .container-info-product {
+        width: auto;
+        height: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 8px;
+        font-family: "Fira Sans", sans-serif;
+        text-align: start;
+    }
+    .title-section-botanas {
+        text-align: center;
+        font-size: 40px;
+    }
+    .container-info-product h2 {
+        position: relative;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    
+        .name-product {
+            width: 250px;
+            height: 30px;
+            border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+        }
+        .price-product {
+            width: 100px;
+            height: 30px;
+            border-left: solid 2px rgba(128, 128, 128, 0.209);
+            border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+            text-align: center;
+        }
+    
+
+
+
+
+    /*contenedor de body dulces*/
+.container-body-dulces {
+    width: auto;
+    height: auto;
+    background-color: rgba(163, 163, 163, 0.041);
+    margin: 0 20px 30px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+.title-section-dulces {
+    text-align: center;
+    font-size: 40px;
+}
+
+.container-info-product-dulces h2 {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+
+.container-title-dulces {
+    width: auto;
+    height: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Fira Sans", sans-serif;
+}
+    .title-product-dulces {
+        width: 250px;
+        height: 30px;
+        border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+    }
+    .title-price-dulces {
+        width: 100px;
+        height: 30px;
+        border-left: solid 2px rgba(128, 128, 128, 0.209);
+        border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+    }
+/*Contenedor de la informacion sobre dulces*/  /*JS*/
+.container-info-product-dulces {
+    width: auto;
+    height: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 8px;
+    font-family: "Fira Sans", sans-serif;
+    text-align: start;
+}
+.title-section-botanas-dulces {
+    text-align: center;
+    font-size: 40px;
+}
+.container-info-product-dulces h2 {
+    position: relative;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+
+    .name-product-dulces {
+        width: 250px;
+        height: 30px;
+        border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+    }
+    .price-product-dulces {
+        width: 100px;
+        height: 30px;
+        border-left: solid 2px rgba(128, 128, 128, 0.209);
+        border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+        text-align: center;
+    }
+
+
+
+
+
+/*contenedor body otross*/
+.container-body-otros {
+        width: auto;
+        height: auto;
+        background-color: rgba(163, 163, 163, 0.041);
+        margin: 0 20px 30px 20px;
+        border-radius: 10px;
+        box-sizing: border-box;
+    
+    }
+    
+        /*titulo de la seccion de otros*/
+        .title-section-otros {
+            text-align: center;
+            font-size: 40px;
+        }
+    
+.container-title-otros {
+    width: auto;
+    height: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    font-size: 10px;
+    font-family: "Fira Sans", sans-serif;
+}
+    .title-product-otros {
+        width: 250px;
+        height: 30px;
+        border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+    }
+    .title-price-otros {
+        width: 100px;
+        height: 30px;
+        border-left: solid 2px rgba(128, 128, 128, 0.209);
+        border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+    }
+
+    /*Contenedor de informacion dobre otros*/ /*JS*/
+    .container-info-product-otros {
+        width: auto;
+        height: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 8px;
+        font-family: "Fira Sans", sans-serif;
+        text-align: start;
+    }
+    .title-section-botanas-otros {
+        text-align: center;
+        font-size: 40px;
+    }
+    .container-info-product-otros h2 {
+        position: relative;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    
+        .name-product-otros {
+            width: 250px;
+            height: 30px;
+            border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+        }
+        .price-product-otros {
+            width: 100px;
+            height: 30px;
+            border-left: solid 2px rgba(128, 128, 128, 0.209);
+            border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+            text-align: center;
+        }
+
+
+
+
+
+
+
+
+
+
+
+/* contenedor body de bolsas*/
+.container-body-bolsas {
+    width: auto;
+    height: auto;
+    background-color: rgba(163, 163, 163, 0.041);
+    margin: 0 20px 30px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+
+    /*titulo de la seccion de bolsas*/
+    .title-section-bolsas {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .container-title-bolsas {
+        width: auto;
+        height: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        text-align: center;
+        font-size: 10px;
+        font-family: "Fira Sans", sans-serif;
+    }
+        .title-product-bolsas {
+            width: 250px;
+            height: 30px;
+            border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+        }
+        .title-price-bolsas {
+            width: 100px;
+            height: 30px;
+            border-left: solid 2px rgba(128, 128, 128, 0.209);
+            border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+        }
+
+    /*Contenedor de informacion dobre bolsas*/ /*JS*/
+    .container-info-product-bolsas {
+        width: auto;
+        height: 30px;
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 8px;
+        font-family: "Fira Sans", sans-serif;
+        text-align: start;
+    }
+    .title-section-botanas-bolsas {
+        text-align: center;
+        font-size: 40px;
+    }
+    .container-info-product-bolsas h2 {
+        position: relative;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+    
+        .name-product-bolsas {
+            width: 250px;
+            height: 30px;
+            border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+        }
+        .price-product-bolsas {
+            width: 100px;
+            height: 30px;
+            border-left: solid 2px rgba(128, 128, 128, 0.209);
+            border-bottom: solid 2px rgba(128, 128, 128, 0.209);
+            text-align: center;
+        }
