@@ -118,7 +118,19 @@
             border-bottom: solid 2px rgba(128, 128, 128, 0.209);
             text-align: center;
         }
-    
+    .toggle-button {
+        width: 15px;
+        height: 10px;
+        position: relative;
+        left: 30px;
+        top: -13px;
+        border-radius: 15px;
+        border: solid 1px black;
+    }
+    .toggle-button p {
+        position: relative;
+        top: -7px;
+    }
 
 
 
