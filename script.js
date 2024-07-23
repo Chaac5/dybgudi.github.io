@@ -88,18 +88,12 @@ const mostrarPantallaListaBolsas = () => {
 }
 mostrarPantallaListaBolsas()
 
+/*Logica addEventListener*/
 
 let containerAllProducts = document.querySelector('.container-all-products');
 let popMostrarInfo = document.querySelector('.pop-container-info');
  
- 
-containerAllProducts.addEventListener('click', e => {
-    if (e.target.classList.contains('toggle-button')){
-        viewProduct(e.target.closest('.container-info-product'))
-    }
-})
 
-/*Logica para aparecer info de productos*/
 let viewProduct = (productContainer) => {
     const titleElement = productContainer.querySelector('.name-product');
     const productName = titleElement.textContent.trim();
@@ -164,3 +158,9 @@ let viewProduct = (productContainer) => {
         popMostrarInfo.style.display = 'none';
     })
  }
+
+containerAllProducts.addEventListener('click', e => {
+    if (e.target.classList.contains('toggle-button')){
+        viewProduct(e.target.closest('.container-info-product'))
+    }
+})
