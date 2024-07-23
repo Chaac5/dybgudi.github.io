@@ -89,3 +89,78 @@ const mostrarPantallaListaBolsas = () => {
 mostrarPantallaListaBolsas()
 
 
+let containerAllProducts = document.querySelector('.container-all-products');
+let popMostrarInfo = document.querySelector('.pop-container-info');
+ 
+ 
+containerAllProducts.addEventListener('click', e => {
+    if (e.target.classList.contains('toggle-button')){
+        viewProduct(e.target.closest('.container-info-product'))
+    }
+})
+
+/*Logica para aparecer info de productos*/
+let viewProduct = (productContainer) => {
+    const titleElement = productContainer.querySelector('.name-product');
+    const productName = titleElement.textContent.trim();
+    
+    let productPop = botanas.find (p => p.nameP === productName);
+
+
+
+    const containerInfoPop = document.createElement('div');
+    containerInfoPop.classList.add('container-toggle-button');
+
+    containerInfoPop.innerHTML = `
+        <div class="title-container-toggle-button">
+            <h1>${productPop.nameP}</h1>
+        </div>
+        <div class="price-container-toggle-button">
+            <div class="price5-container">
+                <h2>$5</h2>
+                <p>${productPop.cost5}grs</p>
+            </div>
+            <div class="price10-container">
+                <h2>$10</h2>
+                <p>${productPop.cost10}grs</p>
+            </div>
+            <div class="price20-container">
+                <h2>$20</h2>
+                <p>${productPop.cost20}grs</p>
+            </div>
+        </div>
+        <div class="kilograms-price-container">
+            <div class="container-kg">
+                <h2>KG</h2>
+                <p>$${productPop.priceKG}</p>
+            </div>
+            <div class="container-34">
+                <h2>3/4K</h2>
+                <p>$${productPop.price34}</p>
+            </div>
+            <div class="container-12">
+                <h2>1/2K</h2>
+                <p>$${productPop.price12}</p>
+            </div>
+            <div class="container-14">
+                <h2>1/4K</h2>
+                <p>$${productPop.price14}</p>
+            </div>
+            <div class="container-100">
+                <h2>100grs</h2>
+                <p>$${productPop.priceGRS}</p>
+            </div>
+        </div>
+        <div class="btn-cerrar-container">
+            <button class="btn-cerrar">cerrar</button>
+        </div>
+    `
+
+    popMostrarInfo.innerHTML = '';
+    popMostrarInfo.appendChild(containerInfoPop);
+    popMostrarInfo.style.display = 'block';
+
+    containerInfoPop.querySelector('.btn-cerrar').addEventListener('click', () => {
+        popMostrarInfo.style.display = 'none';
+    })
+ }
