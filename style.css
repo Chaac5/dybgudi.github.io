@@ -118,6 +118,7 @@
             border-bottom: solid 2px rgba(128, 128, 128, 0.209);
             text-align: center;
         }
+    
     .toggle-button {
         width: 15px;
         height: 10px;
@@ -127,11 +128,6 @@
         border-radius: 15px;
         border: solid 1px black;
     }
-    .toggle-button p {
-        position: relative;
-        top: -7px;
-    }
-
 
 
 
@@ -365,3 +361,173 @@
             border-bottom: solid 2px rgba(128, 128, 128, 0.209);
             text-align: center;
         }
+
+/*container toggle button*/
+
+.container-toggle-button {
+    position: absolute;
+    width: 313px;
+    height: 420px;
+    top: 200px;
+    left: 38px;
+    border-radius: 40px;
+    background: linear-gradient(135deg, rgba(225, 225, 225, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgb(130, 130, 130);
+}
+
+.title-container-toggle-button {
+    position: relative;
+    width: 280px;
+    height: 40px;
+    top: 10px;
+    left: 15px;
+    border-bottom: solid 1px black;
+    text-align: center;
+}
+
+/*container price toggle button*/
+.price-container-toggle-button {
+    position: relative;
+    width: auto;
+    height: 50px;
+    top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    font-size: small;
+}
+.price5-container {
+width: 100px;
+height: 50px;
+}
+.price10-container {
+    width: 100px;
+    height: 50px;
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+.price20-container {
+    width: 100px;
+    height: 50px;
+}
+
+/*Kilograms price container */
+.kilograms-price-container {
+    position: relative;
+    width: 292px;
+    height: 250px;
+    top: 50px;
+    left: 10px;
+    font-size: small;
+}
+
+.container-kg{
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: solid 1px black;
+}
+.container-kg h2 {
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.container-kg p {
+    position: relative;
+    top: 17px;
+    right: 30px;
+}
+
+.container-34{
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: solid 1px black;
+}
+.container-34 h2 {
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.container-34 p {
+    position: relative;
+    top: 17px;
+    right: 30px;
+}
+
+.container-12{
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: solid 1px black;
+}
+.container-12 h2 {
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.container-12 p {
+    position: relative;
+    top: 17px;
+    right: 30px;
+}
+
+.container-14{
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: solid 1px black;
+}
+.container-14 h2 {
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.container-14 p {
+    position: relative;
+    top: 17px;
+    right: 30px;
+}
+
+.container-100{
+    width: auto;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: solid 1px black;
+}
+.container-100 h2 {
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.container-100 p {
+    position: relative;
+    top: 17px;
+    right: 30px;
+}
+
+.container-toggle-button {
+    display: block;
+}
+
+.btn-cerrar {
+    width: 120px;
+    position: relative;
+    top: 50px;
+    left: 100px;
+    border-radius: 15px;
+    border: solid 1px grey;
+}
