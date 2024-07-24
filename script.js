@@ -8,7 +8,7 @@ const mostrarPantallaListaBotana = () => {
                 </div>                              
                 <div class="price-product">         
                     <h2>$${productBotanas.priceKG}</h2>
-                    <button class='btn1-button'><p>...</p></button>                    
+                    <button class='btn1-button'>...</button>                    
                 </div>  
         `
 
