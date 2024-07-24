@@ -89,18 +89,27 @@ const mostrarPantallaListaBolsas = () => {
 mostrarPantallaListaBolsas()
 
 /*Logica addEventListener*/
-
 let containerAllProducts = document.querySelector('.container-all-products');
 let popMostrarInfo = document.querySelector('.pop-container-info');
- 
+
+ window.addEventListener('DOMContentLoaded', () => {
+    let eventClick = () => {
+        containerAllProducts.addEventListener('click', e => {
+            if (e.target.classList.contains('btn1-button')){
+                viewProduct(e.target.closest('.container-info-product'))
+            }
+        })
+    }
+    eventClick();
+});
+
+
 
 let viewProduct = (productContainer) => {
     const titleElement = productContainer.querySelector('.name-product');
     const productName = titleElement.textContent.trim();
     
     let productPop = botanas.find (p => p.nameP === productName);
-
-
 
     const containerInfoPop = document.createElement('div');
     containerInfoPop.classList.add('container-toggle-button');
@@ -159,8 +168,3 @@ let viewProduct = (productContainer) => {
     })
  }
 
-containerAllProducts.addEventListener('click', e => {
-    if (e.target.classList.contains('toggle-button')){
-        viewProduct(e.target.closest('.container-info-product'))
-    }
-})
