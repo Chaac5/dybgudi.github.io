@@ -94,11 +94,17 @@ let popMostrarInfo = document.querySelector('.pop-container-info');
 
 
 
-containerAllProducts.addEventListener('click', e => {
-    if (e.target.classList.contains('btn1-button')){
-        viewProduct(e.target.closest('.container-info-product'))
+window.addEventListener('DOMContentLoaded', () => {
+    let eventClick = () => {
+        containerAllProducts.addEventListener('click', e => {
+            if (e.target.classList.contains('btn1-button')){
+                viewProduct(e.target.closest('.container-info-product'))
+                console.log('active')
+            };
+        })
     }
-})
+    eventClick();
+});
 
 
 
