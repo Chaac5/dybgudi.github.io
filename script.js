@@ -8,7 +8,7 @@ const mostrarPantallaListaBotana = () => {
                 </div>                              
                 <div class="price-product">         
                     <h2>$${productBotanas.priceKG}</h2>
-                    <button class='btn1-button'>...</button>                    
+                    <button class='btn1-button'>°°°</button>                    
                 </div>  
         `
 
@@ -39,7 +39,7 @@ const mostrarPantallaListaDulces = () => {
                 </div>                              
                 <div class="price-product-dulces">         
                     <h2>$${productDulces.priceKG}</h2>
-                    <button class='btn1-button'>...</button>                    
+                    <button class='btn1-button'>°°°</button>                    
                 </div> 
         `
         var containerBodyDulces = document.querySelector('.container-body-dulces');
@@ -59,7 +59,7 @@ const mostrarPantallaListaOtros = () => {
                 </div>                              
                 <div class="price-product-otros">         
                     <h2>$${productOtros.priceKG}</h2>
-                    <button class='btn1-button'>...</button>                    
+                    <button class='btn1-button'>°°°</button>                    
                 </div> 
         `
         let containerBodyOtros = document.querySelector('.container-body-otros');
@@ -79,7 +79,7 @@ const mostrarPantallaListaBolsas = () => {
                 </div>                              
                 <div class="price-product-otros">         
                     <h2>$${productBolsas.priceKG}</h2>
-                    <button class='btn1-button'>...</button>                    
+                    <button class='btn1-button'>°°°</button>                    
                 </div> 
         `
         let containerBodyBolsas = document.querySelector('.container-body-bolsas');
