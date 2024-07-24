@@ -8,7 +8,7 @@ const mostrarPantallaListaBotana = () => {
                 </div>                              
                 <div class="price-product">         
                     <h2>$${productBotanas.priceKG}</h2>
-                    <button class='toggle-button'><p>...</p></button>                    
+                    <button class='btn1-button'><p>...</p></button>                    
                 </div>  
         `
 
@@ -39,7 +39,7 @@ const mostrarPantallaListaDulces = () => {
                 </div>                              
                 <div class="price-product-dulces">         
                     <h2>$${productDulces.priceKG}</h2>
-                    <button class='toggle-button'>...</button>                    
+                    <button class='btn1-button'>...</button>                    
                 </div> 
         `
         var containerBodyDulces = document.querySelector('.container-body-dulces');
@@ -59,7 +59,7 @@ const mostrarPantallaListaOtros = () => {
                 </div>                              
                 <div class="price-product-otros">         
                     <h2>$${productOtros.priceKG}</h2>
-                    <button class='toggle-button'>...</button>                    
+                    <button class='btn1-button'>...</button>                    
                 </div> 
         `
         let containerBodyOtros = document.querySelector('.container-body-otros');
@@ -79,7 +79,7 @@ const mostrarPantallaListaBolsas = () => {
                 </div>                              
                 <div class="price-product-otros">         
                     <h2>$${productBolsas.priceKG}</h2>
-                    <button class='toggle-button'>...</button>                    
+                    <button class='btn1-button'>...</button>                    
                 </div> 
         `
         let containerBodyBolsas = document.querySelector('.container-body-bolsas');
@@ -92,16 +92,16 @@ mostrarPantallaListaBolsas()
 let containerAllProducts = document.querySelector('.container-all-products');
 let popMostrarInfo = document.querySelector('.pop-container-info');
 
- window.addEventListener('DOMContentLoaded', () => {
-    let eventClick = () => {
-        containerAllProducts.addEventListener('click', e => {
-            if (e.target.classList.contains('btn1-button')){
-                viewProduct(e.target.closest('.container-info-product'))
-            }
-        })
-    }
-    eventClick();
-});
+
+let eventClick = () => {
+    containerAllProducts.addEventListener('click', e => {
+        if (e.target.classList.contains('btn1-button')){
+            viewProduct(e.target.closest('.container-info-product'))
+        }
+    })
+}
+eventClick();
+
 
 
 
