@@ -93,14 +93,12 @@ let containerAllProducts = document.querySelector('.container-all-products');
 let popMostrarInfo = document.querySelector('.pop-container-info');
 
 
-let eventClick = () => {
-    containerAllProducts.addEventListener('click', e => {
-        if (e.target.classList.contains('btn1-button')){
-            viewProduct(e.target.closest('.container-info-product'))
-        }
-    })
-}
-eventClick();
+
+containerAllProducts.addEventListener('click', e => {
+    if (e.target.classList.contains('btn1-button')){
+        viewProduct(e.target.closest('.container-info-product'))
+    }
+})
 
 
 
