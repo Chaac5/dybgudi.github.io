@@ -89,7 +89,7 @@ const mostrarPantallaListaBolsas = () => {
 mostrarPantallaListaBolsas()
 
 /*Logica addEventListener*/
-let containerAllProducts = document.querySelector('.container-all-products');
+let containerAllProducts = document.getElementById('container-all-products');
 let popMostrarInfo = document.querySelector('.pop-container-info');
 
 
