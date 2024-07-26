@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-header-main {
+    width: 250px;
+    height: 400px;
+    background: rgb(227, 227, 227);
+    border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 200px;
+        left: 70px;
+        text-align: center;
+}
+
+.title-container-main {
+    color: rgb(32, 32, 77);
+    font-size: 35px;
+    width: auto;
+    height: 70px;
+    border-bottom: solid 1px black;
+}
+
+.a-container-gudi {
+    width: auto;
+    height: 300px;
+    position: relative;
+    top: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.a-container-gudi-ixtenco {
+    width: 200px;
+    height: 25px;
+    position: relative;
+    top: -40px;
+}
+.a-container-gudi-huamantla {
+    width: 200px;
+    height: 25px;
+    position: relative;
+    top: 40px;
+}
