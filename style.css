@@ -121,17 +121,19 @@
             position: relative;
             left: 10px;
         }
-    
+
     .btn1-button {
         width: 20px;
-        height: 10px;
+        height: 11px;
         position: relative;
         left: 60px;
         top: -13px;
         border-radius: 15px;
         border: solid 1px black;
     }
-
+    .category-product {
+        display: none;
+    }
 
 
     /*contenedor de body dulces*/
@@ -211,7 +213,6 @@
         position: relative;
         left: 10px;
     }
-
 
 
 
@@ -377,14 +378,19 @@
 
 
 
-/*container toggle button*/
 
-.container-toggle-button {
-    position: absolute;
+
+
+
+/*container btn1 button*/
+
+.container-btn1-button {
+    position: fixed;
+    z-index: 10;
+    left: 33px;
+    top: 100px;
     width: 313px;
-    height: 420px;
-    top: 200px;
-    left: 38px;
+    height: 450px;
     border-radius: 40px;
     background: linear-gradient(135deg, rgba(225, 225, 225, 0.1), rgba(255, 255, 255, 0));
     backdrop-filter: blur(10px);
@@ -392,18 +398,18 @@
     border: 1px solid rgb(130, 130, 130);
 }
 
-.title-container-toggle-button {
+.title-container-btn1-button {
     position: relative;
     width: 280px;
-    height: 40px;
+    height: auto;
     top: 10px;
     left: 15px;
     border-bottom: solid 1px black;
     text-align: center;
 }
 
-/*container price toggle button*/
-.price-container-toggle-button {
+/*container price btn1 button*/
+.price-container-btn1-button {
     position: relative;
     width: auto;
     height: 50px;
@@ -534,7 +540,7 @@ height: 50px;
     right: 30px;
 }
 
-.container-toggle-button {
+.container-btn1-button {
     display: block;
 }
 
